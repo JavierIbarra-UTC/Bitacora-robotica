@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora de Robótica - Cuatrimestre Sept-Dic 2026</title>
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --accent-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin-top: 10px;
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        article {
+            background: var(--card-bg);
+            margin-top: 30px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+        .meta-info {
+            background: #eff6ff;
+            color: var(--accent-color);
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+        h3 {
+            color: var(--accent-color);
+            margin-top: 25px;
+        }
+        ul, ol {
+            background: #f8fafc;
+            padding: 20px 25px 20px 35px;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 15px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🤖 Bitácora de Robótica Industrial</h1>
+        <p>Mis aprendizajes, apuntes y reflexiones semana a semana</p>
+    </header>
+
+    <article>
+        <div class="meta-info">📅 Periodo: 01 al 04 de Septiembre, 2026 | Cuatrimestre: Septiembre - Dic 2026</div>
+        
+        <h2>Semana 1: Morfología y Grados de Libertad en Robots Industriales</h2>
+        <p>¡Arrancamos el cuatrimestre! Esta primera semana fue totalmente teórica en nuestra clase de robótica, y nos centramos en entender cómo se estructuran los robots industriales y cómo definimos su movimiento en el espacio[cite: 2]. Aquí te comparto los aprendizajes clave que nos dejó la sesión[cite: 2].</p>
+
+        <h3>1. Morfología de Robots Industriales y Dimensiones</h3>
+        <p>Para entender un robot industrial, primero debemos comprender cómo se representa en el espacio[cite: 2]. En clase analizamos cómo se relacionan las dimensiones a través de un punto de proyección[cite: 2]:</p>
+        <ul>
+            <li><strong>Foco y Línea:</strong> Conceptos base para la proyección geométrica[cite: 2].</li>
+            <li><strong>Punto de proyección (OD):</strong> Referencia clave en el sistema[cite: 2].</li>
+            <li><strong>Mundo 2D vs. 3D:</strong>
+                <ul>
+                    <li><strong>2D:</strong> Toda figura que se pueda ubicar dentro de un plano cartesiano (con 2 direcciones de movimiento: X y Y)[cite: 2].</li>
+                    <li><strong>3D:</strong> Espacio tridimensional que añade profundidad (eje Z).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2. Formas de Clasificar a los Robots</h3>
+        <p>En la industria, los robots se pueden clasificar principalmente bajo dos criterios[cite: 2]:</p>
+        <ol>
+            <li><strong>Por su morfología</strong> (su estructura física y diseño general)[cite: 2].</li>
+            <li><strong>Por su área de trabajo / Pose / Planar</strong> (el espacio físico que alcanzan a cubrir durante su operación)[cite: 2].</li>
+        </ol>
+
+        <h3>3. Concepto Clave: Grados de Libertad (GDL)</h3>
+        <p>Uno de los temas más importantes de la semana fue definir qué es un grado de libertad[cite: 2]:</p>
+        <ul>
+            <li><strong>Definición:</strong> Son la cantidad de coordenadas de variables mínimas y suficientes necesarias para determinar la <strong>pose</strong> de un cuerpo rígido en el espacio[cite: 2].</li>
+            <li><strong>La Pose:</strong> Está compuesta por la combinación de la posición y la orientación[cite: 2]:
+                <ul>
+                    <li><strong>Posición:</strong> Definida por las coordenadas espaciales en los ejes X, Y y Z[cite: 2].</li>
+                    <li><strong>Orientación:</strong> Definida por los giros o rotaciones alrededor de los ejes (Rot x, Rot y, Rot z)[cite: 2].</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Conclusión y Reflexión de la Semana</h3>
+        <p>Esta primera semana nos sentó las bases matemáticas y espaciales fundamentales[cite: 2]. Entender qué es un grado de libertad y cómo se clasifican los robots por su morfología es indispensable antes de pasar a la parte de diseño o simulación de trayectorias[cite: 2].</p>
+    </article>
+
+    <footer>
+        <p>Bitácora académica personal - Todos los derechos reservados © 2026</p>
+    </footer>
+
+</body>
+</html>
